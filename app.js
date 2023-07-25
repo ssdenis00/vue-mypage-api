@@ -11,11 +11,7 @@ const routes = require("./routes/index");
 const { requestLogger, errorLogger } = require("./middlewares/logger");
 const errorsMiddleware = require("./middlewares/errors");
 
-const allowedCors = [
-  "https://movies.dip.nomoredomains.monster",
-  "http://movies.dip.nomoredomains.monster",
-  "http://localhost:3000",
-];
+const allowedCors = ["http://localhost:5173", "http://localhost:3000"];
 
 const app = express();
 
